@@ -1,0 +1,6 @@
+venv
+*.log
+.vscode
+.pytest_cache
+*.pyc
+*.mp3

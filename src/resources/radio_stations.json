@@ -1,0 +1,1163 @@
+[
+    {
+        "name": "N-CT FM",
+        "genres": [
+            "Hip Hop",
+            "Rap"
+        ],
+        "game": "Grand Theft Auto",
+        "sid": 1
+    },
+    {
+        "name": "Radio '76 FM",
+        "genres": [
+            "Funk"
+        ],
+        "game": "Grand Theft Auto",
+        "sid": 2
+    },
+    {
+        "name": "Head Radio",
+        "genres": [
+            "Techno",
+            "Rock"
+        ],
+        "game": "Grand Theft Auto",
+        "sid": 3
+    },
+    {
+        "name": "The Fix FM",
+        "genres": [
+            "House",
+            "Dance"
+        ],
+        "game": "Grand Theft Auto",
+        "sid": 4
+    },
+    {
+        "name": "It's Unleashed FM",
+        "genres": [
+            "Hard Rock",
+            "Alternative Rock",
+            "Trance"
+        ],
+        "game": "Grand Theft Auto",
+        "sid": 5
+    },
+    {
+        "name": "The Fergus Buckner Show FM",
+        "genres": [
+            "Country"
+        ],
+        "game": "Grand Theft Auto",
+        "sid": 6
+    },
+    {
+        "name": "Brooklyn Underground FM",
+        "genres": [
+            "Drum and Bass",
+            "Techno"
+        ],
+        "game": "Grand Theft Auto",
+        "sid": 7
+    },
+    {
+        "name": "Bush Sounds",
+        "genres": [
+            "Reggae"
+        ],
+        "game": "Grand Theft Auto: London",
+        "sid": 8
+    },
+    {
+        "name": "Heavy Heavy Monster Sound",
+        "genres": [
+            "Reggae",
+            "Ska"
+        ],
+        "game": "Grand Theft Auto: London",
+        "sid": 9
+    },
+    {
+        "name": "Blow Upradio",
+        "genres": [
+            "Beat"
+        ],
+        "game": "Grand Theft Auto: London",
+        "sid": 10
+    },
+    {
+        "name": "Kaleidoscope",
+        "genres": [
+            "Pop",
+            "Beat"
+        ],
+        "game": "Grand Theft Auto: London",
+        "sid": 11
+    },
+    {
+        "name": "Sound of Soho",
+        "genres": [
+            "Jazz"
+        ],
+        "game": "Grand Theft Auto: London",
+        "sid": 12
+    },
+    {
+        "name": "Radio Penelope",
+        "genres": [
+            "Pop",
+            "Soul"
+        ],
+        "game": "Grand Theft Auto: London",
+        "sid": 13
+    },
+    {
+        "name": "Radio Andorra",
+        "genres": [
+            "Pop",
+            "Beat"
+        ],
+        "game": "Grand Theft Auto: London",
+        "sid": 14
+    },
+    {
+        "name": "Westminster Wireless",
+        "genres": [
+            "Soul",
+            "Jazz"
+        ],
+        "game": "Grand Theft Auto: London",
+        "sid": 15
+    },
+    {
+        "name": "Radio 7",
+        "genres": [
+            "Beat",
+            "Funk"
+        ],
+        "game": "Grand Theft Auto: London",
+        "sid": 16
+    },
+    {
+        "name": "GTA Pomp",
+        "genres": [
+            "Classical"
+        ],
+        "game": "Grand Theft Auto: London",
+        "sid": 17
+    },
+    {
+        "name": "GTA Spy Theme",
+        "genres": [
+            "Jazz"
+        ],
+        "game": "Grand Theft Auto: London",
+        "sid": 18
+    },
+    {
+        "name": "Austin Allegro Chase",
+        "genres": [
+            "Funk"
+        ],
+        "game": "Grand Theft Auto: London",
+        "sid": 19
+    },
+    {
+        "name": "Head Radio",
+        "genres": [
+            "Dance",
+            "Pop",
+            "Rock",
+            "Funk"
+        ],
+        "game": "Grand Theft Auto 2",
+        "sid": 20
+    },
+    {
+        "name": "Rockstar Radio",
+        "genres": [
+            "Rock",
+            "Funk"
+        ],
+        "game": "Grand Theft Auto 2",
+        "sid": 21
+    },
+    {
+        "name": "KREZ",
+        "genres": [
+            "Hip Hop",
+            "Rap"
+        ],
+        "game": "Grand Theft Auto 2",
+        "sid": 22
+    },
+    {
+        "name": "Lo-Fi FM",
+        "genres": [
+            "Funk",
+            "Classic Soul",
+            "Classic Rock"
+        ],
+        "game": "Grand Theft Auto 2",
+        "sid": 23
+    },
+    {
+        "name": "Futuro FM",
+        "genres": [
+            "Funk",
+            "Dance",
+            "Rock"
+        ],
+        "game": "Grand Theft Auto 2",
+        "sid": 24
+    },
+    {
+        "name": "Funami FM",
+        "genres": [
+            "Drum and Bass",
+            "Techno"
+        ],
+        "game": "Grand Theft Auto 2",
+        "sid": 25
+    },
+    {
+        "name": "Lithium FM",
+        "genres": [
+            "Techno",
+            "Classic Soul",
+            "Dance",
+            "Christian Pop"
+        ],
+        "game": "Grand Theft Auto 2",
+        "sid": 26
+    },
+    {
+        "name": "King 130.7",
+        "genres": [
+            "Hard Rock"
+        ],
+        "game": "Grand Theft Auto 2",
+        "sid": 27
+    },
+    {
+        "name": "Osmosis Radio",
+        "genres": [
+            "Dance",
+            "Pop"
+        ],
+        "game": "Grand Theft Auto 2",
+        "sid": 28
+    },
+    {
+        "name": "Heavenly Radio",
+        "genres": [
+            "Christian Pop"
+        ],
+        "game": "Grand Theft Auto 2",
+        "sid": 29
+    },
+    {
+        "name": "KGBH",
+        "genres": [
+            "Classic Rock",
+            "Techno"
+        ],
+        "game": "Grand Theft Auto 2",
+        "sid": 30
+    },
+    {
+        "name": "Head Radio",
+        "genres": [
+            "Pop",
+            "Rock"
+        ],
+        "game": "Grand Theft Auto III",
+        "sid": 31
+    },
+    {
+        "name": "Double Clef FM",
+        "genres": [
+            "Classical"
+        ],
+        "game": "Grand Theft Auto III",
+        "sid": 32
+    },
+    {
+        "name": "K-JAH",
+        "genres": [
+            "Dub",
+            "Reggae"
+        ],
+        "game": "Grand Theft Auto III",
+        "sid": 33
+    },
+    {
+        "name": "Rise FM",
+        "genres": [
+            "Trance",
+            "House"
+        ],
+        "game": "Grand Theft Auto III",
+        "sid": 34
+    },
+    {
+        "name": "Lips 106",
+        "genres": [
+            "Pop"
+        ],
+        "game": "Grand Theft Auto III",
+        "sid": 35
+    },
+    {
+        "name": "Game Radio",
+        "genres": [
+            "Hip Hop",
+            "Rap"
+        ],
+        "game": "Grand Theft Auto III",
+        "sid": 36
+    },
+    {
+        "name": "MSX FM",
+        "genres": [
+            "Drum and Bass"
+        ],
+        "game": "Grand Theft Auto III",
+        "sid": 37
+    },
+    {
+        "name": "Flashback 95.6",
+        "genres": [
+            "80s Pop"
+        ],
+        "game": "Grand Theft Auto III",
+        "sid": 38
+    },
+    {
+        "name": "Chatterbox FM",
+        "genres": [
+            "Talk Show"
+        ],
+        "game": "Grand Theft Auto III",
+        "sid": 39
+    },
+    {
+        "name": "Wildstyle",
+        "genres": [
+            "Hip Hop",
+            "Electro"
+        ],
+        "game": "Grand Theft Auto: Vice City",
+        "sid": 40
+    },
+    {
+        "name": "Flash FM",
+        "genres": [
+            "Pop"
+        ],
+        "game": "Grand Theft Auto: Vice City",
+        "sid": 41
+    },
+    {
+        "name": "K-Chat",
+        "genres": [
+            "Talk Show"
+        ],
+        "game": "Grand Theft Auto: Vice City",
+        "sid": 42
+    },
+    {
+        "name": "Fever 105",
+        "genres": [
+            "Disco",
+            "Soul"
+        ],
+        "game": "Grand Theft Auto: Vice City",
+        "sid": 43
+    },
+    {
+        "name": "V-Rock",
+        "genres": [
+            "Hard Rock",
+            "Heavy Metal"
+        ],
+        "game": "Grand Theft Auto: Vice City",
+        "sid": 44
+    },
+    {
+        "name": "VCPR",
+        "genres": [
+            "Talk Show"
+        ],
+        "game": "Grand Theft Auto: Vice City",
+        "sid": 45
+    },
+    {
+        "name": "Radio Espantoso",
+        "genres": [
+            "Latin Jazz",
+            "Mambo"
+        ],
+        "game": "Grand Theft Auto: Vice City",
+        "sid": 46
+    },
+    {
+        "name": "Emotion 98.3",
+        "genres": [
+            "Soft Pop",
+            "Power Ballad"
+        ],
+        "game": "Grand Theft Auto: Vice City",
+        "sid": 47
+    },
+    {
+        "name": "Wave 103",
+        "genres": [
+            "New Wave",
+            "Synthpop"
+        ],
+        "game": "Grand Theft Auto: Vice City",
+        "sid": 48
+    },
+    {
+        "name": "Playback FM",
+        "genres": [
+            "Hip Hop"
+        ],
+        "game": "Grand Theft Auto: San Andreas",
+        "sid": 49
+    },
+    {
+        "name": "K-Rose",
+        "genres": [
+            "Country"
+        ],
+        "game": "Grand Theft Auto: San Andreas",
+        "sid": 50
+    },
+    {
+        "name": "K-DST",
+        "genres": [
+            "Classic Rock"
+        ],
+        "game": "Grand Theft Auto: San Andreas",
+        "sid": 51
+    },
+    {
+        "name": "Bounce FM",
+        "genres": [
+            "Funk",
+            "Disco"
+        ],
+        "game": "Grand Theft Auto: San Andreas",
+        "sid": 52
+    },
+    {
+        "name": "SF-UR",
+        "genres": [
+            "House"
+        ],
+        "game": "Grand Theft Auto: San Andreas",
+        "sid": 53
+    },
+    {
+        "name": "Radio Los Santos",
+        "genres": [
+            "Hip Hop",
+            "Rap"
+        ],
+        "game": "Grand Theft Auto: San Andreas",
+        "sid": 54
+    },
+    {
+        "name": "Radio X",
+        "genres": [
+            "Alternative Rock",
+            "Grunge"
+        ],
+        "game": "Grand Theft Auto: San Andreas",
+        "sid": 55
+    },
+    {
+        "name": "CSR 103.9",
+        "genres": [
+            "New Jack Swing",
+            "Contemporary Soul"
+        ],
+        "game": "Grand Theft Auto: San Andreas",
+        "sid": 56
+    },
+    {
+        "name": "K-JAH West",
+        "genres": [
+            "Reggae",
+            "Dancehall"
+        ],
+        "game": "Grand Theft Auto: San Andreas",
+        "sid": 57
+    },
+    {
+        "name": "Master Sounds 98.3",
+        "genres": [
+            "Rare Groove",
+            "Classic Funk"
+        ],
+        "game": "Grand Theft Auto: San Andreas",
+        "sid": 58
+    },
+    {
+        "name": "WCTR",
+        "genres": [
+            "Talk Show"
+        ],
+        "game": "Grand Theft Auto: San Andreas",
+        "sid": 59
+    },
+    {
+        "name": "Head Radio",
+        "genres": [
+            "Pop",
+            "Adult Contemporary",
+            "Soft Rock",
+            "R&B"
+        ],
+        "game": "Grand Theft Auto: Liberty City Stories",
+        "sid": 60
+    },
+    {
+        "name": "Double Clef FM",
+        "genres": [
+            "Classical",
+            "Opera"
+        ],
+        "game": "Grand Theft Auto: Liberty City Stories",
+        "sid": 61
+    },
+    {
+        "name": "K-Jah",
+        "genres": [
+            "Reggae",
+            "Dub",
+            "Dancehall"
+        ],
+        "game": "Grand Theft Auto: Liberty City Stories",
+        "sid": 62
+    },
+    {
+        "name": "Rise FM",
+        "genres": [
+            "Dance",
+            "House",
+            "Trance",
+            "Club"
+        ],
+        "game": "Grand Theft Auto: Liberty City Stories",
+        "sid": 63
+    },
+    {
+        "name": "Lips 106",
+        "genres": [
+            "Pop",
+            "Rock",
+            "R&B"
+        ],
+        "game": "Grand Theft Auto: Liberty City Stories",
+        "sid": 64
+    },
+    {
+        "name": "Radio Del Mundo",
+        "genres": [
+            "World Music",
+            "Indian",
+            "Pakistani",
+            "South Asian",
+            "Arabic"
+        ],
+        "game": "Grand Theft Auto: Liberty City Stories",
+        "sid": 65
+    },
+    {
+        "name": "MSX 98",
+        "genres": [
+            "Drum and Bass",
+            "Jungle"
+        ],
+        "game": "Grand Theft Auto: Liberty City Stories",
+        "sid": 66
+    },
+    {
+        "name": "Flashback FM",
+        "genres": [
+            "Disco"
+        ],
+        "game": "Grand Theft Auto: Liberty City Stories",
+        "sid": 67
+    },
+    {
+        "name": "The Liberty Jam",
+        "genres": [
+            "Hip Hop",
+            "Rap"
+        ],
+        "game": "Grand Theft Auto: Liberty City Stories",
+        "sid": 68
+    },
+    {
+        "name": "LCFR",
+        "genres": [
+            "Talk Show"
+        ],
+        "game": "Grand Theft Auto: Liberty City Stories",
+        "sid": 69
+    },
+    {
+        "name": "Flash FM",
+        "genres": [
+            "Pop",
+            "Rock",
+            "New Wave"
+        ],
+        "game": "Grand Theft Auto: Vice City Stories",
+        "sid": 70
+    },
+    {
+        "name": "V-Rock",
+        "genres": [
+            "Hard Rock",
+            "Metal"
+        ],
+        "game": "Grand Theft Auto: Vice City Stories",
+        "sid": 71
+    },
+    {
+        "name": "Paradise FM",
+        "genres": [
+            "Disco"
+        ],
+        "game": "Grand Theft Auto: Vice City Stories",
+        "sid": 72
+    },
+    {
+        "name": "VCPR",
+        "genres": [
+            "Talk Show"
+        ],
+        "game": "Grand Theft Auto: Vice City Stories",
+        "sid": 73
+    },
+    {
+        "name": "VCFL",
+        "genres": [
+            "Soul"
+        ],
+        "game": "Grand Theft Auto: Vice City Stories",
+        "sid": 74
+    },
+    {
+        "name": "Wave 103",
+        "genres": [
+            "New Wave",
+            "Synthpop"
+        ],
+        "game": "Grand Theft Auto: Vice City Stories",
+        "sid": 75
+    },
+    {
+        "name": "Fresh 105 FM",
+        "genres": [
+            "Hip Hop",
+            "Electro"
+        ],
+        "game": "Grand Theft Auto: Vice City Stories",
+        "sid": 76
+    },
+    {
+        "name": "Radio Espantoso",
+        "genres": [
+            "Latin Jazz"
+        ],
+        "game": "Grand Theft Auto: Vice City Stories",
+        "sid": 77
+    },
+    {
+        "name": "Emotion 98.3",
+        "genres": [
+            "Power Ballad"
+        ],
+        "game": "Grand Theft Auto: Vice City Stories",
+        "sid": 78
+    },
+    {
+        "name": "Electro-Choc",
+        "genres": [
+            "Electro House"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 79
+    },
+    {
+        "name": "Fusion FM",
+        "genres": [
+            "Jazz Fusion"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 80
+    },
+    {
+        "name": "IF99",
+        "genres": [
+            "Funk",
+            "Afrobeat"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 81
+    },
+    {
+        "name": "Jazz Nation Radio 108.5",
+        "genres": [
+            "Jazz"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 82
+    },
+    {
+        "name": "K109 The Studio",
+        "genres": [
+            "Disco"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 83
+    },
+    {
+        "name": "Liberty City Hardcore",
+        "genres": [
+            "Hardcore Punk"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 84
+    },
+    {
+        "name": "Liberty Rock Radio",
+        "genres": [
+            "Classic Rock"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 85
+    },
+    {
+        "name": "Massive B Soundsystem",
+        "genres": [
+            "Dancehall"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 86
+    },
+    {
+        "name": "Radio Broker",
+        "genres": [
+            "Alternative Rock"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 87
+    },
+    {
+        "name": "San Juan Sounds",
+        "genres": [
+            "Latin",
+            "Reggae"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 88
+    },
+    {
+        "name": "The Beat 102.7",
+        "genres": [
+            "Hip Hop"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 89
+    },
+    {
+        "name": "The Classics",
+        "genres": [
+            "Classic Hip Hop"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 90
+    },
+    {
+        "name": "The Journey",
+        "genres": [
+            "Ambient",
+            "Chillout"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 91
+    },
+    {
+        "name": "The Vibe 98.8",
+        "genres": [
+            "R&B",
+            "Soul"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 92
+    },
+    {
+        "name": "Tuff Gong Radio",
+        "genres": [
+            "Reggae",
+            "Dub"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 93
+    },
+    {
+        "name": "Vladivostok FM",
+        "genres": [
+            "Eastern European"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 94
+    },
+    {
+        "name": "WKTT Talk Show Radio",
+        "genres": [
+            "Talk Show"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 95
+    },
+    {
+        "name": "Public Liberty Radio",
+        "genres": [
+            "Talk Show"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 96
+    },
+    {
+        "name": "Integrity 2.0",
+        "genres": [
+            "Talk Show"
+        ],
+        "game": "Grand Theft Auto IV",
+        "sid": 97
+    },
+    {
+        "name": "RamJam FM",
+        "genres": [
+            "Reggae",
+            "Dub",
+            "Dancehall"
+        ],
+        "game": "Grand Theft Auto: Episodes from Liberty City",
+        "sid": 98
+    },
+    {
+        "name": "Self-Actualization FM",
+        "genres": [
+            "Ambient",
+            "Chillout"
+        ],
+        "game": "Grand Theft Auto: Episodes from Liberty City",
+        "sid": 99
+    },
+    {
+        "name": "Vice City FM",
+        "genres": [
+            "80s Pop"
+        ],
+        "game": "Grand Theft Auto: Episodes from Liberty City",
+        "sid": 100
+    },
+    {
+        "name": "Ticklah",
+        "genres": [
+            "Dub",
+            "Reggae"
+        ],
+        "game": "Grand Theft Auto: Chinatown Wars",
+        "sid": 101
+    },
+    {
+        "name": "Deadmau5",
+        "genres": [
+            "Electronic"
+        ],
+        "game": "Grand Theft Auto: Chinatown Wars",
+        "sid": 102
+    },
+    {
+        "name": "Alchemist",
+        "genres": [
+            "Hip Hop"
+        ],
+        "game": "Grand Theft Auto: Chinatown Wars",
+        "sid": 103
+    },
+    {
+        "name": "Truth & Soul",
+        "genres": [
+            "Jazz",
+            "Funk"
+        ],
+        "game": "Grand Theft Auto: Chinatown Wars",
+        "sid": 104
+    },
+    {
+        "name": "Prairie Cartel",
+        "genres": [
+            "Alternative Rock"
+        ],
+        "game": "Grand Theft Auto: Chinatown Wars",
+        "sid": 105
+    },
+    {
+        "name": "DJ Khalil",
+        "genres": [
+            "Hip Hop"
+        ],
+        "game": "Grand Theft Auto: Chinatown Wars",
+        "sid": 106
+    },
+    {
+        "name": "Tortoise",
+        "genres": [
+            "Post-Rock"
+        ],
+        "game": "Grand Theft Auto: Chinatown Wars",
+        "sid": 107
+    },
+    {
+        "name": "Turntables on the Hudson",
+        "genres": [
+            "World Beat"
+        ],
+        "game": "Grand Theft Auto: Chinatown Wars",
+        "sid": 108
+    },
+    {
+        "name": "Anvil",
+        "genres": [
+            "Metal"
+        ],
+        "game": "Grand Theft Auto: Chinatown Wars",
+        "sid": 109
+    },
+    {
+        "name": "Sinowav FM",
+        "genres": [
+            "Chinese"
+        ],
+        "game": "Grand Theft Auto: Chinatown Wars",
+        "sid": 110
+    },
+    {
+        "name": "DFA",
+        "genres": [
+            "Punk"
+        ],
+        "game": "Grand Theft Auto: Chinatown Wars",
+        "sid": 111
+    },
+    {
+        "name": "Radio Los Santos",
+        "genres": [
+            "Hip Hop"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 112
+    },
+    {
+        "name": "Space 103.2",
+        "genres": [
+            "Funk"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 113
+    },
+    {
+        "name": "West Coast Classics",
+        "genres": [
+            "Hip Hop"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 114
+    },
+    {
+        "name": "Rebel Radio",
+        "genres": [
+            "Country",
+            "Southern Rock"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 115
+    },
+    {
+        "name": "Los Santos Rock Radio",
+        "genres": [
+            "Rock",
+            "Pop Rock",
+            "Hard Rock"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 116
+    },
+    {
+        "name": "The Lowdown 91.1",
+        "genres": [
+            "Classic Soul"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 117
+    },
+    {
+        "name": "Blue Ark",
+        "genres": [
+            "Reggae",
+            "Dancehall",
+            "Dub"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 118
+    },
+    {
+        "name": "Non-Stop-Pop FM",
+        "genres": [
+            "Pop",
+            "R&B",
+            "Dance",
+            "Eurodance",
+            "Synthpop"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 119
+    },
+    {
+        "name": "East Los FM",
+        "genres": [
+            "Regional Mexican",
+            "Electronic",
+            "Hip Hop",
+            "Rock",
+            "Ska"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 120
+    },
+    {
+        "name": "WorldWide FM",
+        "genres": [
+            "Chillwave",
+            "Jazz Funk"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 121
+    },
+    {
+        "name": "Channel X",
+        "genres": [
+            "Punk Rock"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 122
+    },
+    {
+        "name": "Radio Mirror Park",
+        "genres": [
+            "Indie"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 123
+    },
+    {
+        "name": "Vinewood Boulevard Radio",
+        "genres": [
+            "Alternative Rock"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 124
+    },
+    {
+        "name": "Soulwax FM",
+        "genres": [
+            "Techno",
+            "Acid techno",
+            "Acid house",
+            "Electro House"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 125
+    },
+    {
+        "name": "FlyLo FM",
+        "genres": [
+            "IDM",
+            "Experimental Electronic"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 126
+    },
+    {
+        "name": "Blaine County Talk Show Radio",
+        "genres": [
+            "Talk Show"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 127
+    },
+    {
+        "name": "WCTR",
+        "genres": [
+            "Talk Show"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 128
+    },
+    {
+        "name": "The Lab",
+        "genres": [
+            "Hip Hop",
+            "Synthpop",
+            "Dancehall",
+            "Rock"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 129
+    },
+    {
+        "name": "blonded Los Santos 97.8 FM",
+        "genres": [
+            "Contemporary R&B",
+            "Soul",
+            "Psychedelic Rock",
+            "Rap",
+            "Hip Hop",
+            "Experimental Electronic",
+            "IDM",
+            "Techno",
+            "Grime"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 130
+    },
+    {
+        "name": "Los Santos Underground Radio",
+        "genres": [
+            "House",
+            "Techno"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 131
+    },
+    {
+        "name": "iFruit Radio",
+        "genres": [
+            "Hip Hop"
+        ],
+        "game": "Grand Theft Auto V",
+        "sid": 132
+    }
+]
