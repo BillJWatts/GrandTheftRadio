@@ -1,10 +1,9 @@
 import logging
 from pathlib import Path
-
+from resources.auth import TOKEN
 from discord.ext import commands
 
 logging.basicConfig(filename="bot.log", filemode="w", encoding="utf-8", level=logging.DEBUG)
-TOKEN = ""
 COGS_PATH = Path("src/cogs")
 
 client = commands.Bot(command_prefix="gtr.")

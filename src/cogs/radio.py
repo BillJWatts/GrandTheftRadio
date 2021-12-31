@@ -1,7 +1,5 @@
-import discord
 from discord.ext import commands
 import dao
-from dao.data import get_stations
 from output import messenger, player
 from dto.models import RadioStation
 import random
@@ -28,7 +26,7 @@ class Radio(commands.Cog):
 
         await messenger.send_playing_message(ctx, station)
 
-        player.play_radio_station(voice_client, station)
+        await player.play_radio_station(voice_client, station)
 
     @commands.command()
     async def stop(self, ctx):
