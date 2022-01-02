@@ -39,26 +39,28 @@ class MatchingResult(NamedTuple):
 class SearchQuery:
     """Class representing a search query
 
-    TODO add 'is_game' method
-
     Methods:
         is_sid: Returns true if query is an station id
         is_genre: Return true if query is a genre
+        is_game: Return true is query is a game
 
     """
 
     def __init__(self, query: List[str]) -> None:
+        # TODO Avoid the circular import in a better way
+        from dao import data
+
+        self._data = data
         self._query: str = " ".join(query)
 
     def is_sid(self) -> bool:
         return self._query.isnumeric()
 
     def is_genre(self) -> bool:
+        return self._data.is_genre(self._query)
 
-        # TODO Find a better way to avoid the circular import
-        from dao import data
-
-        return data.is_genre(self._query)
+    def is_game(self) -> bool:
+        return self._data.is_game(self._query)
 
     def __str__(self) -> str:
         return self._query

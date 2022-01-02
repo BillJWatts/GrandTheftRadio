@@ -64,7 +64,10 @@ class Radio(commands.Cog):
             return data.search_by_sid(int(query))
 
         if query.is_genre():
-            return random.choice(data.search_genres(str(query)))
+            return random.choice(data.search_by_genre(str(query)))
+
+        if query.is_game():
+            return random.choice(data.search_by_game(str(query)))
 
         if str(query).lower() == "random":
             return random.choice(data.get_stations())

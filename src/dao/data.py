@@ -58,7 +58,11 @@ def search_stations(query: SearchQuery) -> List[RadioStation]:
 
     if query.is_genre():
         logging.info(f"Searching stations by genre '{query}'")
-        return search_genres(str(query))
+        return search_by_genre(str(query))
+
+    if query.is_game():
+        logging.info(f"Searching stations by game '{query}'")
+        return search_by_game(str(query))
 
     logging.info(f"Searching stations by name: '{query}'")
     matching_results: List[MatchingResult] = _match_stations(str(query))
@@ -83,32 +87,7 @@ def search_by_sid(sid: int) -> Optional[RadioStation]:
             return station
 
 
-def get_genres() -> List[str]:
-    """Retrieve all genres listed in the radio station data
-
-    Returns:
-        List[str]: List of unique genres
-    """
-    stations = get_stations()
-    genres = set()
-    for station in stations:
-        genres.update(station.genres)
-    return sorted(list(genres))
-
-
-def is_genre(query: str) -> bool:
-    """Checks if a query string is a genre
-
-    Args:
-        query (str): potential genre
-
-    Returns:
-        bool: True if query is a close match to a genre
-    """
-    return _genre_match(query, get_genres())
-
-
-def search_genres(query: str) -> List[RadioStation]:
+def search_by_genre(genre: str) -> List[RadioStation]:
     """Searches for radio stations with a matching genre to the query.
     Attempts a fuzzy match against genres as well as an exact match
     exmaples :
@@ -125,9 +104,75 @@ def search_genres(query: str) -> List[RadioStation]:
     stations = [
         station
         for station in get_stations()
-        if (_genre_match(query, station.genres) or _has_genre(query, station.genres))
+        if (_genre_match(genre, station.genres) or _has_genre(genre, station.genres))
     ]
     return stations
+
+
+def search_by_game(game: str) -> List[RadioStation]:
+    """Searches for radio stations with a matching game to the query.
+
+    Args:
+        game (str): game query
+
+    Returns:
+        List[RadioStation]: List of radio stations with a matching game
+    """
+    stations = [station for station in get_stations() if _game_match(game, station.game)]
+    return stations
+
+
+def get_genres() -> List[str]:
+    """Retrieve all genres listed in the radio station data
+
+    Returns:
+        List[str]: List of unique genres
+    """
+    stations = get_stations()
+    genres = set()
+    for station in stations:
+        genres.update(station.genres)
+    return sorted(list(genres))
+
+
+def get_games() -> List[str]:
+    """Retrieve all games listed in the radio station data
+
+    Returns:
+        List[str]: List of unique games
+    """
+    stations = get_stations()
+    games = set()
+    for station in stations:
+        games.add(station.game)
+    return list(games)
+
+
+def is_game(query: str) -> bool:
+    """Checks if a query string is a game
+
+    Args:
+        query (str): potential game
+
+    Returns:
+        bool: true if the query is a match to a game
+    """
+    for game in get_games():
+        if _game_match(query, game):
+            return True
+    return False
+
+
+def is_genre(query: str) -> bool:
+    """Checks if a query string is a genre
+
+    Args:
+        query (str): potential genre
+
+    Returns:
+        bool: True if query is a close match to a genre
+    """
+    return _genre_match(query, get_genres())
 
 
 def _genre_match(query: str, genres: List[str]) -> bool:
@@ -143,10 +188,24 @@ def _genre_match(query: str, genres: List[str]) -> bool:
     Returns:
         bool: True if at least one matching score is higher than 90%
     """
-    best_score = process.extractOne(query, genres)[1]
+    _, best_score = process.extractOne(query, genres)
     if not best_score:
         return False
     return best_score > 90
+
+
+def _game_match(query: str, game: str) -> bool:
+    """Performs a fuzzy match between a query and game
+
+    Args:
+        query (str): potential game
+        game (str): game
+
+    Returns:
+        bool: True if the matching score is larger than 90%
+    """
+    game = game.replace("Grand Theft Auto:", "")
+    return fuzz.ratio(query.lower(), game.lower()) > 90
 
 
 def _has_genre(query: str, genres: List[str]) -> bool:
