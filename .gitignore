@@ -5,3 +5,4 @@ venv
 *.pyc
 *.mp3
 auth.py
+*.tmp

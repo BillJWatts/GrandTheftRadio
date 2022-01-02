@@ -1,3 +1,4 @@
+"""Module containing all message sending logic"""
 from typing import List
 from dto.models import RadioStation
 from discord.ext.commands import Context
@@ -6,7 +7,6 @@ import logging
 
 
 async def send_message(channel, message: str):
-    logging.info(f"Sending message: {message}")
     await channel.send(message)
 
 
@@ -25,6 +25,7 @@ async def send_search_result(channel, station_list: List[RadioStation]):
         message = "No stations found"
     await send_embed(channel=channel, title="Search Results", description=message)
 
+
 async def send_playing_message(channel, station: RadioStation):
     await send_message(channel, "Now playing:")
     await send_embed(
@@ -33,6 +34,7 @@ async def send_playing_message(channel, station: RadioStation):
         description=station.game,
         url=f"https://gta.fandom.com/wiki/{station.name.replace(' ', '_')}",
     )
+
 
 def _format_station_list(stations: List[RadioStation]) -> str:
     """Formats a list of RadioStation objects into a readable message string
