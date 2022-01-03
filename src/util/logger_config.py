@@ -10,7 +10,6 @@ def set_logging_config():
     logging.basicConfig(
         filename=FILENAME,
         filemode="w",
-        encoding="utf-8",
         format=FORMAT,
         datefmt="%Y-%m-%d:%H:%M:%S",
         level=LEVEL,
