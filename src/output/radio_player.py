@@ -40,7 +40,7 @@ async def disconnect_from_voice(context: Context):
     Args:
         context (Context): Context of the user command.
     """
-    voice_client = context.message.guild.voice_client
+    voice_client: discord.VoiceClient = context.message.guild.voice_client
     voice_client.stop()
     logging.info("Disconnecting from voice channel")
     await voice_client.disconnect()
@@ -70,6 +70,8 @@ async def play_radio_station(voice_client: discord.VoiceClient, station: RadioSt
         voice_client.play(source=radio_source)
 
         await asyncio.sleep((station_duration - audio_timestamp) + 1)
+
+        # TODO sort logic for loop break
 
         if not voice_client.is_connected() or voice_client.is_playing():
             logging.info(f"Breaking {station.name} audio loop")

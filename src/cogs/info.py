@@ -1,10 +1,9 @@
 """Module containing all info (radio data retrieval) user commands"""
-from typing import List
+
 from discord.ext import commands
-from dao import data
+from dao import radio_data
 from dto.models import SearchQuery
 from output import messenger
-import logging
 
 
 class Info(commands.Cog):
@@ -23,7 +22,7 @@ class Info(commands.Cog):
         await messenger.send_embed(
             channel=context,
             title="Genres",
-            description="\n".join(data.get_genres()),
+            description="\n".join(radio_data.get_genres()),
         )
 
     @commands.command()
@@ -41,18 +40,29 @@ class Info(commands.Cog):
         )
 
     @commands.command()
+    async def games(self, context: commands.Context):
+        """Lists all games available through grand theft radio
+
+        Args:
+            context (commands.Context): Context of the user command
+        """
+        await messenger.send_embed(
+            channel=context,
+            title="Games",
+            description="\n".join(radio_data.get_games()),
+        )
+
+    @commands.command()
     async def search(self, context: commands.Context, *args):
         """Searches for radio stations by name, genre or id number
-
-        TODO Allow user to enter a game title to retrieve all stations from that game
 
         Args:
             context (commands.Context): Context of the user command
             args (List[str]): Search query sent by user
         """
-        search_results = data.search_stations(SearchQuery(args))
+        search_results = radio_data.search_stations(SearchQuery(args))
         await messenger.send_search_result(context, search_results)
 
 
-def setup(client):
-    client.add_cog(Info(client))
+async def setup(client):
+    await client.add_cog(Info(client))

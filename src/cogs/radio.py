@@ -1,8 +1,8 @@
 """Module containing all radio (audio playback) user commands"""
 from typing import List
 from discord.ext import commands
-from dao import data
-from output import messenger, player
+from dao import radio_data
+from output import messenger, radio_player
 from dto.models import RadioStation, SearchQuery
 import random
 
@@ -31,13 +31,13 @@ class Radio(commands.Cog):
             )
             return
 
-        voice_client = await player.connect_to_voice(context, self.client)
+        voice_client = await radio_player.connect_to_voice(context, self.client)
 
         station = self._get_station(SearchQuery(args))
 
         await messenger.send_playing_message(context, station)
 
-        await player.play_radio_station(voice_client, station)
+        await radio_player.play_radio_station(voice_client, station)
 
     @commands.command()
     async def stop(self, context: commands.Context):
@@ -46,7 +46,7 @@ class Radio(commands.Cog):
         Args:
             context (commands.Context): Context of the user command
         """
-        await player.disconnect_from_voice(context)
+        await radio_player.disconnect_from_voice(context)
 
     @staticmethod
     def _get_station(query: SearchQuery) -> RadioStation:
@@ -61,20 +61,20 @@ class Radio(commands.Cog):
             RadioStation: Radio station to be played
         """
         if query.is_sid():
-            return data.search_by_sid(int(query))
+            return radio_data.search_by_sid(int(query))
 
         if query.is_genre():
-            return random.choice(data.search_by_genre(str(query)))
+            return random.choice(radio_data.search_by_genre(str(query)))
 
         if query.is_game():
-            return random.choice(data.search_by_game(str(query)))
+            return random.choice(radio_data.search_by_game(str(query)))
 
         if str(query).lower() == "random":
-            return random.choice(data.get_stations())
+            return random.choice(radio_data.get_stations())
 
         # Return the best search result
-        return data.search_stations(query)[0]
+        return radio_data.search_stations(query)[0]
 
 
-def setup(client):
-    client.add_cog(Radio(client))
+async def setup(client):
+    await client.add_cog(Radio(client))

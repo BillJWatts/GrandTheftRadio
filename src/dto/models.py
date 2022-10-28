@@ -48,9 +48,9 @@ class SearchQuery:
 
     def __init__(self, query: List[str]) -> None:
         # TODO Avoid the circular import in a better way
-        from dao import data
+        from dao import radio_data
 
-        self._data = data
+        self._data = radio_data
         self._query: str = " ".join(query)
 
     def is_sid(self) -> bool:
