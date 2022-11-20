@@ -39,7 +39,7 @@ async def _load_cogs(bot: commands.Bot):
 def _get_api_token() -> str:
     """Retrieves discord api authentication token from environment variables"""
 
-    api_token = os.getenv("DISCORD_API_TOKEN")
+    api_token = os.getenv("GTR_DISCORD_API_TOKEN")
 
     if not api_token:
         print("ERROR: 'DISCORD_API_TOKEN' must be set as an environment " "variable")
