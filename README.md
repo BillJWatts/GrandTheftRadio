@@ -17,20 +17,15 @@ Discord radio bot able to play any radio station from all GTA games. Only for pr
 
 ## Dev Requirements
 
-* Python >= 3.8
+* Python >= 3.12
 
-* Poetry
-
-If you want to create the venv in-repo (for IDE detection):
-
-`poetry config virtualenvs.in-project true`
-
+* uv
 
 Install dependencies:
 
-`poetry install`
+`uv sync`
 
 Run the bot:
 
-`poetry run python src/main.py`
+`uv run python src/main.py`
 

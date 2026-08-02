@@ -1,4 +1,5 @@
 """Module containing all admin commands"""
+
 from discord.ext import commands
 from output import messenger
 import logging
@@ -20,7 +21,9 @@ class Admin(commands.Cog):
             extension (str): cog extension to be loaded
         """
         await self.client.load_extension(f"cogs.{extension}")
-        await messenger.send_message(context, f"{extension.capitalize()} extension loaded!")
+        await messenger.send_message(
+            context, f"{extension.capitalize()} extension loaded!"
+        )
 
     @commands.command()
     @commands.is_owner()
@@ -32,7 +35,9 @@ class Admin(commands.Cog):
             extension (str): cog extension to be unloaded
         """
         await self.client.unload_extension(f"cogs.{extension}")
-        await messenger.send_message(context, f"{extension.capitalize()} extension unloaded!")
+        await messenger.send_message(
+            context, f"{extension.capitalize()} extension unloaded!"
+        )
 
     @commands.command()
     @commands.is_owner()
@@ -45,7 +50,9 @@ class Admin(commands.Cog):
         """
         await self.client.unload_extension(f"cogs.{extension}")
         await self.client.load_extension(f"cogs.{extension}")
-        await messenger.send_message(context, f"{extension.capitalize()} extension reloaded!")
+        await messenger.send_message(
+            context, f"{extension.capitalize()} extension reloaded!"
+        )
 
 
 async def setup(client):

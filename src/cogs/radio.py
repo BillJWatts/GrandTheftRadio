@@ -1,4 +1,5 @@
 """Module containing all radio (audio playback) user commands"""
+
 from typing import List
 from discord.ext import commands
 from dao import radio_data
@@ -27,7 +28,8 @@ class Radio(commands.Cog):
         # Check if user is in a voice channel
         if not context.message.author.voice:
             await messenger.send_message(
-                context, f"You need to be in a voice channel {context.message.author.display_name}!"
+                context,
+                f"You need to be in a voice channel {context.message.author.display_name}!",
             )
             return
 

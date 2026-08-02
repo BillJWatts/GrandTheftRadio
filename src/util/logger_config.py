@@ -1,4 +1,5 @@
 """Module containing logging configuration details"""
+
 import logging
 
 FILENAME = "bot.log"

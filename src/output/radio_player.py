@@ -1,4 +1,5 @@
 """Module containing all audio playback logic"""
+
 import asyncio
 import logging
 from datetime import datetime
@@ -11,7 +12,9 @@ from mutagen.mp3 import MP3
 AUDIO_DIR = "src/resources/audio/"
 
 
-async def connect_to_voice(context: Context, client: discord.Client) -> discord.VoiceClient:
+async def connect_to_voice(
+    context: Context, client: discord.Client
+) -> discord.VoiceClient:
     """Connects the client to the voice channel given in the context. If the client is already in
     a voice channel, then the client will be moved to the new channel.
 
@@ -24,7 +27,9 @@ async def connect_to_voice(context: Context, client: discord.Client) -> discord.
     """
     channel = context.message.author.voice.channel
     voice = discord.utils.get(context.guild.voice_channels, name=channel.name)
-    voice_client: discord.VoiceClient = discord.utils.get(client.voice_clients, guild=context.guild)
+    voice_client: discord.VoiceClient = discord.utils.get(
+        client.voice_clients, guild=context.guild
+    )
 
     if not voice_client:
         voice_client = await voice.connect()
@@ -66,7 +71,9 @@ async def play_radio_station(voice_client: discord.VoiceClient, station: RadioSt
             source=f"{AUDIO_DIR}{station.audio_file}",
             before_options=f"-ss {audio_timestamp}",
         )
-        logging.info(f"Playing '{station.name}' at timestamp: {audio_timestamp} seconds")
+        logging.info(
+            f"Playing '{station.name}' at timestamp: {audio_timestamp} seconds"
+        )
         voice_client.play(source=radio_source)
 
         await asyncio.sleep((station_duration - audio_timestamp) + 1)

@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 """Entry point for the discord bot"""
+
 import logging
 import os
 from util.logger_config import set_logging_config
 from pathlib import Path
 from discord.ext import commands
 import discord
-import nest_asyncio
 import asyncio
 
 COGS_PATH = Path("src/cogs")
@@ -24,7 +24,7 @@ async def main():
     await _load_cogs(bot)
 
     # Start the bot
-    bot.run(api_token)
+    await bot.start(api_token)
 
 
 async def _load_cogs(bot: commands.Bot):
@@ -42,7 +42,9 @@ def _get_api_token() -> str:
     api_token = os.getenv("GTR_DISCORD_API_TOKEN")
 
     if not api_token:
-        print("ERROR: 'DISCORD_API_TOKEN' must be set as an environment " "variable")
+        print(
+            "ERROR: 'GTR_DISCORD_API_TOKEN' must be set as an environment " "variable"
+        )
         exit()
 
     return api_token
@@ -61,8 +63,5 @@ def _create_bot() -> commands.Bot:
     return commands.Bot(command_prefix="gtr.", intents=intents)
 
 
-# discord.py 2.0 requires the bot to be run inside ascynio's asynchronous event loop
-# However asyncio may already be running due to other uses such as Jupyter notebooks blocking run()
-# nest_asyncio allows the creation of nested event loops
-nest_asyncio.apply()
-asyncio.run(main())
+if __name__ == "__main__":
+    asyncio.run(main())

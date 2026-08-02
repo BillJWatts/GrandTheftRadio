@@ -1,4 +1,5 @@
 """Module containing all data objects used in the program"""
+
 from typing import List, NamedTuple
 from dataclasses import dataclass
 

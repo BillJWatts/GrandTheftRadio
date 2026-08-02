@@ -1,4 +1,5 @@
 """Module containing data retrieval logic"""
+
 import json
 from typing import List, Optional
 from fuzzywuzzy import fuzz, process
@@ -26,7 +27,9 @@ def get_stations() -> List[RadioStation]:
         Returns:
             RadioStation
         """
-        return RadioStation(station["name"], station["genres"], station["game"], station["sid"])
+        return RadioStation(
+            station["name"], station["genres"], station["game"], station["sid"]
+        )
 
     # Grab from memory if already loaded
     global STATION_LIST
@@ -118,7 +121,9 @@ def search_by_game(game: str) -> List[RadioStation]:
     Returns:
         List[RadioStation]: List of radio stations with a matching game
     """
-    stations = [station for station in get_stations() if _game_match(game, station.game)]
+    stations = [
+        station for station in get_stations() if _game_match(game, station.game)
+    ]
     return stations
 
 
@@ -235,7 +240,8 @@ def _match_stations(query: str) -> List[MatchingResult]:
 
     matching_results = [
         MatchingResult(
-            radio_station=station, matching_score=fuzz.partial_ratio(query, station.name)
+            radio_station=station,
+            matching_score=fuzz.partial_ratio(query, station.name),
         )
         for station in get_stations()
     ]
