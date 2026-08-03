@@ -1,9 +1,6 @@
-# ==========================================
-# STAGE 1: Compile custom minimal FFmpeg
-# ==========================================
+# STAGE 1: Compile minimal FFmpeg
 FROM debian:bookworm-slim AS builder
 
-# Install build essential dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     pkg-config \
@@ -13,14 +10,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-# Clone FFmpeg (pin to a stable version)
 WORKDIR /build
 RUN git clone --depth 1 --branch n6.1.1 https://github.com/FFmpeg/FFmpeg.git ffmpeg
 
 WORKDIR /build/ffmpeg
 
-# Configure minimal build
-# Adjust --enable-* flags to fit your specific application needs!
+# Configure minimal ffmpeg build with only the required components.
 RUN ./configure \
     --prefix=/build/out \
     --disable-everything \
@@ -31,22 +26,24 @@ RUN ./configure \
     --disable-autodetect \
     --enable-ffmpeg \
     --enable-small \
-    --enable-protocol=file \
-    --enable-demuxer=mov,mp3 \
-    --enable-decoder=h264,aac,mp3 \
-    --enable-encoder=mp3,rawvideo \
-    --enable-muxer=mp3,mp4 \
-    --enable-filter=scale \
+    --enable-protocol=file,pipe \
+    --enable-demuxer=mov,mp3,ogg,wav,pcm_s16le,s16le \
+    --enable-muxer=s16le,pcm_s16le,opus,mp3 \
+    --enable-decoder=h264,aac,mp3,opus,pcm_s16le \
+    --enable-encoder=pcm_s16le,opus \
+    --enable-parser=opus,mpegaudio \
+    --enable-filter=volume,aresample,scale \
     && make -j$(nproc) \
     && make install
 
-# ==========================================
-# STAGE 2: Minimal Python Runtime
-# ==========================================
+# STAGE 2: Python Runtime
 FROM python:3.14-slim
 
-# Copy the custom ~15MB binary from builder stage
 COPY --from=builder /build/out/bin/ffmpeg /usr/local/bin/ffmpeg
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libopus0 \
+    && rm -rf /var/lib/apt/lists/*
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
